@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Proyecto: libro de recetas</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+        <style>
+        body{
+            background-color:rgb(239, 245, 208);
+        }
+        
+        #Titulo{
+            color:rgb(0, 0, 0);
+            text-align:center;
+        }
+        
+        h2{
+            background-color:rgb(179, 201, 52);
+        }
+
+        .contenedor{
+            width: 100%;
+            margin:0 auto;
+        }
+
+        .lateral{
+            background-color: #0A0E7A;
+            bottom: 0;
+            left: 0;
+            padding: 1em;
+            position: fixed;
+            top: 0;
+            width: 350px;
+        }
+
+        .perfil_circulo{
+            border-radius: 50%;
+            height: 100px;
+            overflow: hidden;
+            margin: 0;
+            width: 100px;
+        }
+
+        .perfil_foto{
+            width: 100%;
+        }
+
+        .perfil_nombres{
+            color: #fff;
+            font-size: 20px;
+            margin-left: .5em;
+            width: 150px;
+        }
+
+        .perfil_nombres, .perfil_circulo{
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .informacion{
+            color:#ffff ;
+            position: absolute;
+            bottom: 1em;
+        }
+
+        .informacion_titulo{
+            background-color: #0A0E7A;
+            font-size: 18px;
+        }
+
+        .habilidades{
+            padding: 0;
+        }
+
+        .habilidad{
+            background-color:#7A0A2C ;
+            color: #fff;
+            display: inline-block;
+            font-size: 12px;
+            text-transform: uppercase;
+            padding: .5em;
+        }
+        
+        .info{
+            margin-left: 400px;
+            padding: 1em;
+            display: table;
+        }
+
+
+        @media screen and (max-width: 800px){
+
+        .lateral{
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+
+        .informacion{
+            position: relative;
+        }
+
+        .info{
+            margin-left: 0;
+            width: 100%;
+        }
+
+        }
+
+
+        @media screen and(min-width: 400px){
+            .contenedor{
+                width: 100%;
+            }
+
+            .perfil_nombres{
+                position: relative;
+            }
+
+            .informacion{
+                position: relative;
+            }
+
+            .info{
+                margin-left: 0;
+                width: 100%;
+            }
+
+            .proyecto{
+                width: 100%;
+                display: block;
+            }
+        }
+
+        </style>
+    </head>
+    <body>
+<section class="lateral">
+    
+        <div class="perfil">
+            <figure class="perfil_circulo">
+                <img src="img/icono.jpeg" class="perfil_foto">
+            </figure>
+            <h1 class="perfil_nombres">Erick Amilcar Pérez Méndez</h1>
+        </div>
+
+        <div class="informacion">
+            <h2 class="informacion_titulo">Desarrollador</h2>
+            <p class="informacion_descripcion">El portafolio contiene proyectos hechos en HTML y CSS.</p>
+        <ul class="habilidades">
+            <li class="habilidad">Html5</li>
+            <li class="habilidad">Css</li>
+        </ul>
+        </div>
+
+    </section>        
+
+    <div class="contenedor">
+
+
+       <section class="info">
+        <h1 id="Titulo">Libro de Recetas</h1>
+        
+        <h2>Contenido:</h2>
+        
+        <ol>
+            <li><a href="#r1">Ensalada de maíz fresco salteado y pollo</a></li>
+            <li><a href="#r2">Sopa de miso</a></li>
+            <li><a href="#r3">Sopa de lasaña</a></li>
+        </ol>
+        
+        <h2 id="r1">Ensalada de maíz fresco salteado y pollo</h2>
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Ensalada_de_col_o_ensalada_americana.jpg/220px-Ensalada_de_col_o_ensalada_americana.jpg">
+        
+        <ul>
+            <li>Tiempo: 30 min</li>
+            <li>Porciones: 2</li>
+        </ul>
+        
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Ingredientes</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+            <td>Mazorca de maiz dulce</td>
+            <td>1</td>
+            </tbody>
+            
+            <tbody>
+            <td>Pimentón dulce</td>
+            <td>1/2 cucharadita</td>
+            </tbody>
+            
+            <tbody>
+            <td>Pimentón picante</td>
+            <td>1/2 cucharadita</td>
+            </tbody>
+            
+            <tbody>
+            <td>Comino molido</td>
+            <td>1/4 cucaradita</td>
+            </tbody>
+            
+            <tbody>
+            <td>Cilantro molido</td>
+            <td>1/4 cucaradita</td>
+            </tbody>
+            
+            <tbody>
+            <td>Pechuga de pollo asada o cocida</td>
+            <td>1</td>
+            </tbody>
+            
+            <tbody>
+            <td>Lechuga hoja de roble pequeña</td>
+            <td>1</td>
+            </tbody>
+            
+            <tbody>
+            <td>Tomate pera</td>
+            <td>3</td>
+            </tbody>
+            
+            <tbody>
+            <td>Queso de cabra tierno</td>
+            <td>30g</td>
+            </tbody>
+            
+            <tbody>
+            <td>Aceite de oliva virgen extra</td>
+            <td>al gusto</td>
+            </tbody>
+            
+            <tbody>
+            <td>Pimienta negra molida</td>
+            <td>al gusto</td>
+            </tbody>
+            
+            <tbody>
+            <td>Sal</td>
+            <td>al gusto</td>
+            </tbody>
+        </table>
+        
+        <p><strong>Paso 1:</strong> Retirar las hojas de la mazorca y los filamentos, cortar la base, lavar, intar con aceite y poner a calentar una plancha a fuego medio-fuerte. Cocinar la mazorca con una pizca de sal, girándola para que se dore bien por todas partes. Tardaremos unos 15-20 minutos. Retirar. Aprovechar para cocinar a la plancha el pollo mientras se enfría, si no está ya cocido.
+</p>
+        <p><strong>Paso 2:</strong> Sacar los granos mediante cortes rectos con un buen cuchillo, de forma vertical, dejando el tallo limpio. Poner a calentar una sartén con un poco de aceite y añadir los granos, removiendo con cuidado para separarlos del todo. Añadir todas las especias, salpimentar y saltear unos 8-10 minutos.
+</p>
+        <p><strong>Paso 2:</strong> Sacar los granos mediante cortes rectos con un buen cuchillo, de forma vertical, dejando el tallo limpio. Poner a calentar una sartén con un poco de aceite y añadir los granos, removiendo con cuidado para separarlos del todo. Añadir todas las especias, salpimentar y saltear unos 8-10 minutos.
+</p>
+
+
+
+        <h2 id="r2">Sopa de miso</h2>
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Instant_miso_soup.jpg/220px-Instant_miso_soup.jpg">
+        
+        <ul>
+            <li>Tiempo: 20 min</li>
+            <li>Porciones: 4</li>
+        </ul>
+        
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Ingredientes</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            
+             <tbody>
+            <td>kombu (alga) deshidratado</td>
+            <td>20 g</td>
+            </tbody>
+            
+            <tbody>
+            <td>Katsuobushi (copos de atún deshidratado) una cucharada sopera aprox</td>
+            <td>10 g</td>
+            </tbody>
+            
+            <tbody>
+            <td>Agua</td>
+            <td>1 l</td>
+            </tbody>
+            
+            <tbody>
+            <td>Miso blanco una cucharada</td>
+            <td>1</td>
+            </tbody>
+            
+            <tbody>
+            <td>Alga wakame seca</td>
+            <td>al gusto</td>
+            </tbody>
+            
+            <tbody>
+            <td>Salsa de soja</td>
+            <td>al gusto</td>
+            </tbody>
+            
+            <tbody>
+            <td>Cebolla</td>
+            <td>1</td>
+            </tbody>
+            
+            <tbody>
+            <td>Tofu blando</td>
+            <td>50 g</td>
+            </tbody>
+            
+        </table>
+        
+        <p><strong>Paso 1:</strong> Para hacer la sopa de miso, necesitamos preparar previamente un caldo dashi. Para ello, hidratamos durante una hora el alga kombu en un litro de agua. Después, ponemos ese mismo cazo con el alga y el agua a calentar y apagamos el fuego en cuanto empiece a hervir.
+</p>
+        <p><strong>Paso 2:</strong> Sacamos el alga kombu y añadimos el kasuobushi y dejamos que se infusione durante 10-15 minutos. Sabremos que está listo cuando los copos de bonito deshidratados se hayan ido al fondo de la cacerola. Colamos y reservamos ese caldo dashi resultante.
+</p>
+        <p><strong>Paso 3:</strong> Para hacer la sopa de miso, disolvemos la pasta de miso en un vaso de nuestro caldo dashi, mientras ponemos el resto del caldo a cocer. Cuando esté disuelto lo integramos con el resto del caldo al que añadiremos el alga wakame y el tofu cortado en pequeños taquitos dejando cocer durante 2 minutos.
+</p>
+        <p><strong>Paso 4:</strong> Finalmente servimos la sopa de miso acompañada de cebolla en juliana servida por encima en cada cuenco. Si lo deseas, puedes añadir también patatas, zanahoria, brócoli o los ingredientes que quieras encontrar como tropezones.
+</p>
+        
+                <h2 id="r3">Sopa de lasaña</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/A_fuego_lento_con_el_tomate_previamente_pelado_y_triturado_para_as%C3%AD_hacer_una_buena_conserva_de_tomate_frito_y_abstenerse_a_comprarlo_en_ninguna_tienda_-_panoramio.jpg/270px-thumbnail.jpg">
+        
+        <ul>
+            <li>Tiempo: 40 min</li>
+            <li>Porciones: 2 </li>
+        </ul>
+        
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Ingredientes</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tbody>
+            <td>Cebolla dulce</td>
+            <td>Mitad</td>
+            </tbody>
+            
+            <tbody>
+            <td>Diente de ajo</td>
+            <td>1</td>
+            </tbody>            
+
+            <tbody>
+            <td>Carne picada de ternera</td>
+            <td>200 g</td>
+            </tbody>
+
+            <tbody>
+            <td>Tomate triturado natural</td>
+            <td>400 g</td>
+            </tbody>
+            
+            <tbody>
+            <td>Laurel</td>
+            <td>1</td>
+            </tbody>       
+            
+            <tbody>
+            <td>Orégano seco </td>
+            <td>1/2 cucharadita</td>
+            </tbody>
+
+            <tbody>
+            <td>Tomillo seco</td>
+            <td>1/2 cucharadita</td>
+            </tbody>
+            
+            <tbody>
+            <td>Vino tinto o blanco</td>
+            <td>100 ml</td>
+            </tbody>
+            
+            <tbody>
+            <td>Caldo de pollo o verduras o agua</td>
+            <td>500 ml</td>
+            </tbody>
+            
+            <tbody>
+            <td>Placas de lasaña (depende del tamaño)</td>
+            <td>6</td>
+            </tbody>
+            
+            <tbody>
+            <td>Queso Parmesano </td>
+            <td>2 cucharadas</td>
+            </tbody>
+            
+            <tbody>
+            <td>Ricotta</td>
+            <td>al gusto</td>
+            </tbody>
+            
+            <tbody>
+            <td>Albahaca</td>
+            <td>al gusto</td>
+            </tbody>            
+            
+            <tbody>
+            <td>Aceite de oliva virgen extra</td>
+            <td>al gusto</td>
+            </tbody>
+            
+            <tbody>
+            <td>Pimienta negra molida</td>
+            <td>al gusto</td>
+            </tbody>
+            
+            <tbody>
+            <td>Sal</td>
+            <td>al gusto</td>
+            </tbody>            
+            
+            </tbody>
+        </table>
+        
+        <p><strong>Paso 1:</strong> Picar fina la cebolla y el diente de ajo. Calentar un fondo de aceite de oliva virgen extra en una cazuela y dorar la cebolla con una pizca de sal. Añadir el diente de ajo y remover un minuto. Incorporar la carne picada, salpimentar y cocinar unos minuto, hasta que esté bien dorada, removiendo y separando la carne con una cuchara o espátula.
+</p>
+
+        <p><strong>Paso 2:</strong> Echar el tomate, el laurel, el orégano y el tomillo. Cocinar un par de minutos y añadir el vino. Cuando se evapore el alcohol cubrir con el caldo, llevar a ebullición y tapar. Cocer durante 20-25 minutos. Romper las placas de lasaña en piezas pequeñas y añadirlas a la cazuela. Cocinar destapado, el tiempo que indique el paquete de la pasta.
+</p>
+
+        <p><strong>Paso 3:</strong> Añadir el queso rallado, mezclar y corregir de sal. Servir en cuencos o platos hondos con unas cucharadas de queso ricotta, pimienta negra y albahaca fresca picada o, en su defecto, un poco de perejil.
+</p>
+
+
+    <p><em>Source: <a href="https://www.directoalpaladar.com/recetario/101-ideas-recetas-faciles-rapidas-para-cena-socorrida">Puedes ver mas recetas aca</a></em></p>
+    
+    </section>
+    </div>
+    </body>
+</html>
